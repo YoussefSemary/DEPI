@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles2.css">
+    <title>E-Commerce</title>
+</head>
+<body>
+<div class="container">
+<header class="header">
+    <h1 class="header__heading">ECO GOODS</h1>
+    
+    <div class="header__links">
+        <a href="#shop" class="header__links-link">SHOP</a>
+        <a href="#new-arrivals" class="header__links-link">NEW ARRIVALS</a>
+        <a href="#about-us" class="header__links-link">ABOUT US</a>
+        <a href="#contact" class="header__links-link">CONTACT</a>
+    </div>
+
+    <div class="header__controls" style="display: flex; align-items: center; gap: 15px;">
+        <input type="text" id="search-input" placeholder="Search..." class="search-input">
+        <button id="theme-toggle" class="theme-btn">🌙</button>
+        
+        <div class="header__icons">
+            <img src="./shopping-cart-svgrepo-com.svg" alt="Cart Icon" class="header__icons-icon icon">
+            <img src="./person-svgrepo-com.svg" alt="Person Vector Icon" class="header__icons-icon icon">
+        </div>
+    </div>
+</header>
+<section class="shop" id="shop">
+    <div class="shop__content">
+    <h2 class="shop__heading">Sustainable Living,<br>Delivered</h2>
+    <button class="shop__button">EXPLORE NOW</button>
+    </div>
+    <div>
+    <img src="./Gemini_Generated_Image_ho4w6nho4w6nho4w.png" alt="Shop" class="shop__image">
+    </div>
+</section>
+<section class="categories" id="new-arrivals">
+    <div class="categories__category">
+        <img src="./WellnessBoxSquare-removebg-preview.png" alt="Wellness" class="categories__category-image">
+        <p class="categories__category-name">Wellness & Tea</p>
+    </div>
+    <div class="categories__category">
+        <img src="./2149366018-removebg-preview.png" alt="Clothes" class="categories__category-image">
+        <p class="categories__category-name">Apparell & Home</p>
+    </div>
+    <div class="categories__category">
+        <img src="./kitchen-set-removebg-preview.png" alt="Kitchen" class="categories__category-image">
+        <p class="categories__category-name">Kitchen & Decor</p>
+    </div>
+</section>
+<section class="products" id="products">
+    <h2 class="products__heading">EXPLORE NOW</h2>
+    <div class="products__product">
+        <img src="./side-view-black-tea-pear-shape-glass-table.jpg" alt="Tea" class="products__product-image">
+        <p class="products__product-text">Wellness Tea</p>
+                <p class="products__product-discount">Save 50% Off</p>
+
+        <div class="products__prices">
+        <p class="products__prices-price">2.99$</p>
+        <p class="products__prices-old">5.99$</p>
+        </div>
+    </div>
+    <div class="products__product">
+        <img src="./45127.jpg" alt="Candle" class="products__product-image">
+        <p class="products__product-text">Rose & Ebony Candle</p>
+        <p class="products__product-discount">Save 50% Off</p>
+        <div class="products__prices">
+        <p class="products__prices-price">9.99$</p>
+        <p class="products__prices-old">19.99$</p>
+        </div>
+    </div>
+    <div class="products__product">
+        <img src="./natural-self-care-assortment.jpg" alt="Tooth Brush" class="products__product-image">
+        <p class="products__product-text">Wooden ToothBrush</p>
+                <p class="products__product-discount">Save 50% Off</p>
+
+     <div class="products__prices">
+        <p class="products__prices-price">3.99$</p>
+        <p class="products__prices-old">4.99$</p>
+     </div>
+    </div>
+    <div class="products__product">
+        <img src="./133334.jpg" alt="Rug" class="products__product-image">
+        <p class="products__product-text">Beige Hand Tufted Wool Rug</p>
+                <p class="products__product-discount">Save 50% Off</p>
+
+        <div class="products__prices">
+        <p class="products__prices-price">99.99$</p>
+        <p class="products__prices-old">139.49$</p>
+        </div>
+    </div>
+</div>
+<div id="cart-modal" class="cart-modal">
+    <div class="cart-content">
+        <div class="cart-header">
+            <h2>Your Cart</h2>
+            <span class="close-cart">&times;</span>
+        </div>
+        <div class="cart-items">
+            <p class="empty-msg">Your cart is empty.</p>
+        </div>
+        <div class="cart-footer">
+            <h3>Total: $<span id="cart-total">0.00</span></h3>
+            <button class="checkout-btn">Checkout</button>
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+    
+</body>
+</html>
